@@ -1,38 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(241, 238, 238);
+  font-family: 'Nunito', sans-serif;
+}
+
 .App {
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+main {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 6.5rem;
+  letter-spacing: .8rem;
+  font-weight: lighter;
+}
+
+main p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: rgb(53, 192, 192);
+  height: 60px;
+  width: 180px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 80px;
+  width: 1200px;
+  position: fixed;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0px auto;
+  left: 0px;
+  right: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header-nav h3 {
+  margin: 0 20px;
+
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 900px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    background-color: white;
+    height: 65px;
+    padding: 0 10%;
+    
+  }
+
+  header h2, header h3 {
+    color: black;
   }
 }
